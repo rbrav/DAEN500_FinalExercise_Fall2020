@@ -1,0 +1,24 @@
+Regression:
+	Multiple Regression (MR) uses a predictor/independent variable to model a quantitative response/dependent variable; that is, the output is the expected actual quantitative value of the dependent variable at a given value of the independent variable. MR is used when one needs to make an estimation about a population regression model from sample data. MR may also be used when the response variable for a given value of the predictor variable needs to be estimated from population data. 
+Logistic Regression (LR) uses the predictor/independent variable to model a binary response variable; that is, for a binary system with potential output of 0 or 1, the ouput of the LR model is the proportion of 1’s and the probability of a 1 at a given value of the independent variable. LR is used when one needs to estimate the probability (or proportion) of a response variable with only two possible outcomes (that is, a binary variable) at a given value of the predictor variable. 
+For an example with MR, if one wanted to estimate the concentration of chemical X in an experimental solution by using a spectrophotometer, this could be accomplished by constructing a MR model from a series of solutions with a known concentration of chemical X and recording the output of the spectrophotometer for these known solutions. In this case, the spectrophotometer’s output is the independent/predictor variable, plotted on the X-axis, and the concentration of chemical X is the quantitative dependent/response variable plotted on the Y-axis. The recorded output of the spectrophotometer from the experimental solution can be used to predict the concentration of X.
+For an example with LR, if one wanted to estimate the likelihood that a current graduate student will successfully complete their program (a binary variable, as the only outcomes are program completion or failure to complete the program), this could be accomplished by constructing a LR model which uses the GPA of past students as the independent/predictor variable and models the proportion of students who graduated at each GPA. The likelihood of a student graduating at a given GPA could then be estimated. 
+
+
+PCA:
+1)	A component is a variable formed by weighted combinations of existent predictor variables which are highly correlated.
+
+
+2)	Principal Component Analysis (PCA) is a method of reducing many variables into as few components as reasonable, with a goal of maximizing variance along the projected coordinates. Reducing the number of variables can make analyses more efficient.
+
+3)	 Medical records can contain a wealth of information about patients. However, for a large dataset, many variables may be cumbersome in performing analyses. PCA may be used to condense the number of variables into components. For example, suppose we have a data set containing weight in pounds and BMI for patients at a given height. At a given height, weight in pounds and Body Mass Index (BMI) are expected to be highly correlated, as these the BMI variable is interdependent on weight in pounds. Weight in pounds and BMI may be combined to create a new single component, after a correlation matrix has been created to produce relevant eigenvectors, with the formula
+
+Zi = vi1X1 + vi2X2  
+
+where
+Zi = the newly formed component
+vi1 = the weight of the first component of the ith eigenvector
+vi2 = the weight of the second component of the ith eigenvector
+X1 = the column vector of the first variable
+X2 = the column vector of the second variable
+
